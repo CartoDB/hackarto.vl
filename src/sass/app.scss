@@ -1,0 +1,138 @@
+// ...
+
+$mainSize: 960px;
+$hackartoColor: #EE433F;
+
+body {
+	overflow-x: hidden;
+}
+.container {
+	max-width: $mainSize;
+}
+.section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+h4 {
+	text-transform: uppercase;
+}
+.header {
+	padding: 32px 0;
+}
+.register {
+	position: relative;
+	padding: 60px 0 340px;
+}
+.register-title {
+	color: $hackartoColor;
+}
+.register-banner {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 25px 0;
+	color: #FFF;
+	background: #2E3C43;
+	z-index: 2;
+}
+.register-participants {
+	position: absolute;
+	right: 50%;
+	transform: translateX(250px);
+	bottom: 75px;
+	align-items: flex-end;
+	z-index: 1;
+}
+.register-participant {
+	margin-left: -10px;
+	z-index: 1;
+}
+.register-participant.is-inFront {
+	z-index: 2;
+}
+.register-donut {
+	$radius: 1000px;
+	position: absolute;
+	width: $radius;
+	height: $radius;
+	top: -100px;
+	left: 50%;
+	transform: translateX(250px);
+	background: $hackartoColor;
+	border-radius: 100%;
+	z-index: 3;
+}
+.register-donutMiddle {
+	position: absolute;
+	width: 35%;
+	height: 35%;
+	left: 50%;
+	top: 50%;
+	background: #FFF;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 100%;
+}
+.rules-list dt {
+	display: block;
+	padding: 5px 0;
+}
+.documentation {
+	background: #F9F9F9;
+	overflow: hidden;
+}
+.documentation-image {
+	position: relative;
+	align-items: center;
+	justify-content: flex-end;
+	// Cutrada
+	svg {
+		margin-right: -10px;
+	}
+}
+.documentation-image:after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(to right, rgba(#000, 0) 0%, rgba(#000, 0.05) 85%, rgba(#000, 0.2) 100%);
+	z-index: 1;
+}
+.documentation-content {
+  padding-left: 80px;
+}
+.support {
+	position: relative;
+	background: #2E3C43;
+}
+.support .is-body,
+.support .is-title {
+	color: #FFF;
+}
+.support-logo {
+	position: absolute;
+	left: 70%;
+	top: -100px;
+	z-index: 1;
+}
+.jury-list {
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.jury-listItem {
+	text-align: center;
+	@media (max-width: 600px) {
+		width: 50%;
+		margin-bottom: 40px;
+	}
+}
+.footer {
+	padding: 60px 0;
+	background: #F9F9F9;
+}
+.footer-text {
+ text-align: right;
+}

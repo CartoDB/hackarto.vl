@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  <head>
+    {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+    <title>{{ block "title" . }}{{ .Site.Title -}}{{ end }}</title>
+    {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+  </head>
+  <body>
+    {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+    {{ block "register" . }}{{ partial "site/register.html" . }}{{ end }}
+    {{ block "how-to-upload" . }}{{ partial "site/how-to-upload.html" . }}{{ end }}
+    {{ block "documentation" . }}{{ partial "site/documentation.html" . }}{{ end }}
+    {{ block "support" . }}{{ partial "site/support.html" . }}{{ end }}
+    {{ block "jury" . }}{{ partial "site/jury.html" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+    {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+  </body>
+</html>
