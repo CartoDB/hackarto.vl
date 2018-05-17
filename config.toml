@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-US"
-title = "HaCkARTO.js"
-siteURL = "http://cartodb.github.io/Hackarto.js/"
+title = "HaCkARTO.vl"
+siteURL = "http://cartodb.github.io/hackarto.vl/"
 
 disableKinds = ["RSS"]
 enableRobotsTXT = true
