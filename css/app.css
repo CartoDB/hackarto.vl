@@ -36,7 +36,7 @@ h4 {
   right: 50%;
   -webkit-transform: translateX(250px);
           transform: translateX(250px);
-  bottom: 72px;
+  bottom: 75px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
