@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-US"
-title = "HaCkARTO.vl"
+title = "HaCkARTO.VL"
 siteURL = "http://cartodb.github.io/hackarto.vl/"
 
 disableKinds = ["RSS"]
